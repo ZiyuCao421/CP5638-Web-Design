@@ -1,0 +1,31 @@
+# CP5638 Week 1 – Basic HTML
+
+## Overview
+
+This week I created a simple two-page personal website using basic HTML.
+
+## Pages
+
+- `index.html` – Home page with a heading, personal introduction, image, and link.
+- `aboutme.html` – About Me page with personal information, an ice cream image, and a link back to the home page.
+
+## HTML Concepts Practised
+
+- HTML document structure
+- Headings
+- Paragraphs
+- Images
+- Alternative text (`alt`)
+- Hyperlinks
+
+## Testing
+
+I tested both pages in a web browser and confirmed that:
+
+- The images display correctly.
+- The link from `index.html` to `aboutme.html` works.
+- The link from `aboutme.html` back to `index.html` works.
+
+## GitHub
+
+The completed Week 1 files are stored in this repository under the `week1` folder.
