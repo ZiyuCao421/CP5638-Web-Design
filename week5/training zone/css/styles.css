@@ -1,0 +1,378 @@
+/* ============================================================
+   Training Zone - Main Stylesheet
+   Author : Ziyu Cao (ID 15014211)
+   Date   : 16/10/2026
+   File   : styles.css
+   Theme  : Deep Green (#1e4d2b) + Gold (#d4a017) - "Academic"
+   Fonts  : Playfair Display (headings) + Lato (body)
+   Strategy: Mobile-first, sticky header, responsive at 768px / 1024px
+   ============================================================ */
+
+/* ---------- CSS Reset ---------- */
+body, header, nav, main, footer,
+h1, h2, h3, h4, p, div, img, ul, ol, li,
+a, dl, dt, dd, section, article, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ---------- Global ---------- */
+body {
+    background-color: #f4f1e8;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #d4a017;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1e4d2b;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+h1 { font-size: 1.9em; }
+h2 { font-size: 1.5em; border-bottom: 2px solid #d4a017; padding-bottom: 0.25em; }
+h3 { font-size: 1.25em; color: #1e4d2b; }
+h4 { font-size: 1.1em; color: #d4a017; text-transform: uppercase; letter-spacing: 1px; }
+
+p { margin-bottom: 1em; }
+
+/* ---------- Header (sticky) ---------- */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #1e4d2b;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+header img {
+    margin: 0 auto;
+    max-height: 100px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    background-color: #143619;
+    padding: 0.5% 0;
+    margin-bottom: 0;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top: 1px solid #d4a017;
+}
+nav li:last-child {
+    border-bottom: 1px solid #d4a017;
+}
+nav li a {
+    display: block;
+    color: #f4f1e8;
+    text-align: center;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+nav li a:hover, nav li a:focus {
+    background-color: #d4a017;
+    color: #143619;
+    text-decoration: none;
+}
+
+/* ---------- Main ---------- */
+main {
+    background-color: #ffffff;
+    padding: 1.5em 4%;
+    font-size: 1.1em;
+    min-height: 60vh;
+}
+
+main > section, main > div {
+    margin-bottom: 1.8em;
+}
+main > section:last-child, main > div:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #1e4d2b;
+    padding: 1.5em 0;
+    margin-top: 1em;
+}
+footer p {
+    font-size: 0.85em;
+    text-align: center;
+    color: #f4f1e8;
+    padding: 0.25em 1em;
+    margin: 0;
+}
+footer p a {
+    color: #d4a017;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Mobile / Tablet / Desktop visibility ---------- */
+.mobile { display: block; }
+.tablet-desktop { display: none; }
+
+/* ---------- Hero (Home page) ---------- */
+#hero {
+    margin-bottom: 1.5em;
+    background-color: #1e4d2b;
+}
+#hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #d4a017;
+}
+
+/* ---------- Mobile-only welcome + tel CTA (Home) ---------- */
+.mobile .action {
+    font-size: 1.35em;
+    color: #d4a017;
+    font-weight: 700;
+}
+
+/* ---------- Tel-link button ---------- */
+.tel-link {
+    background-color: #1e4d2b;
+    padding: 1em;
+    margin: 1em auto;
+    width: 85%;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #d4a017;
+}
+.tel-link a {
+    color: #f4f1e8;
+    text-decoration: none;
+    font-size: 1.4em;
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+}
+.tel-link a:hover {
+    color: #d4a017;
+    text-decoration: none;
+}
+
+/* ---------- Hours list ---------- */
+.hours {
+    margin-left: 8%;
+    list-style-type: none;
+}
+.hours li {
+    padding: 0.25em 0;
+    border-bottom: 1px dotted #d4c896;
+}
+
+/* ---------- Image utilities ---------- */
+.round {
+    border-radius: 8px;
+}
+.frame {
+    border: 2px solid #d4c896;
+    padding: 4px;
+    background-color: #f4f1e8;
+}
+
+/* ---------- Action / CTA text ---------- */
+.action {
+    font-size: 1.35em;
+    color: #d4a017;
+    font-weight: 700;
+}
+
+/* ---------- About page sections ---------- */
+#history, #mission, #founder {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #d4c896;
+}
+#history:last-child, #mission:last-child, #founder:last-child {
+    border-bottom: none;
+}
+#history img, #mission img, #founder img {
+    margin-bottom: 1em;
+    border: 3px solid #d4a017;
+}
+
+/* ---------- Contact page ---------- */
+#contact {
+    padding: 0.5em 0;
+}
+#contact h2 {
+    text-align: center;
+}
+#contact .info-block {
+    background-color: #f4f1e8;
+    padding: 1.2em 1.5em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border-left: 4px solid #d4a017;
+}
+#contact h3 {
+    color: #1e4d2b;
+    margin-bottom: 0.3em;
+}
+#contact .info-block p {
+    margin-bottom: 0.4em;
+}
+#contact a {
+    color: #d4a017;
+    font-weight: 700;
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+#contact .map {
+    margin-top: 2em;
+    border: 3px solid #1e4d2b;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#contact .map img {
+    width: 100%;
+    height: auto;
+}
+
+/* ============================================================
+   TABLET VIEWPORT (min-width: 768px)
+   ============================================================ */
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px 0;
+    }
+    header img {
+        max-height: 130px;
+    }
+
+    /* Nav becomes horizontal */
+    nav li {
+        display: inline-block;
+        border-top: none;
+        font-size: 1.3em;
+    }
+    nav li:last-child {
+        border-bottom: none;
+    }
+    nav li a {
+        padding: 0.6em 1em;
+    }
+
+    /* Mobile/Desktop visibility swap */
+    .tablet-desktop { display: block; }
+    .mobile { display: none; }
+
+    /* Hero capped height */
+    #hero img {
+        max-height: 420px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* About page: 2 columns */
+    #history, #mission, #founder {
+        width: 48%;
+        float: left;
+        margin: 0 1% 1.5em;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Contact - centered info, side-by-side map */
+    #contact .info-block {
+        padding: 1.5em 2em;
+    }
+
+    /* Hours more compact */
+    .hours {
+        margin-left: 15%;
+    }
+}
+
+/* ============================================================
+   DESKTOP VIEWPORT (min-width: 1024px)
+   ============================================================ */
+@media (min-width: 1024px) {
+
+    header img {
+        max-height: 150px;
+    }
+
+    nav li {
+        font-size: 1.4em;
+    }
+
+    /* About page: 3 columns */
+    #history, #mission, #founder {
+        width: 31%;
+    }
+
+    /* Contact: 2-column grid for info + map */
+    .contact-grid {
+        display: table;
+        width: 100%;
+    }
+    .contact-grid > div {
+        display: table-cell;
+        vertical-align: top;
+        padding: 1em;
+    }
+    .contact-grid > div:first-child {
+        width: 55%;
+    }
+    .contact-grid > div:last-child {
+        width: 45%;
+    }
+
+    /* Main wider padding */
+    main {
+        padding: 2em 6%;
+        font-size: 1.15em;
+    }
+}
+
+/* ============================================================
+   ULTRA-WIDE (min-width: 1440px)
+   ============================================================ */
+@media (min-width: 1440px) {
+    main {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
