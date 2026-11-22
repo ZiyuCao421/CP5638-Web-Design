@@ -271,21 +271,6 @@ research sources
 ---
 
 ## 📂 Repository Structure
-
-### 📍 Current State
-
-```text
-CP5638-Web-Design/
-├── README.md
-└── week1/
-    ├── aboutme.html
-    ├── icecream.jpg
-    ├── index.html
-    └── pizza_small.jpg
-```
-
-`week1/` is the starting point. Additional folders will be added progressively as the course develops.
-
 ### 🎯 Target Structure
 
 > The complete folder layout that this repository will grow into over the semester.
