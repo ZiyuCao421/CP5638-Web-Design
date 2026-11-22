@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CP5638 Assessment 2 — Project Plan — Ziyu Cao</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem 4rem;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #1f2d33;
+            background: #fdfcfa;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #0b4f5c;
+            line-height: 1.25;
+        }
+
+        h1 {
+            border-bottom: 3px solid #0d6e6e;
+            padding-bottom: .5rem;
+        }
+
+        h2 {
+            margin-top: 2.5rem;
+            border-left: 6px solid #d98f28;
+            padding-left: .7rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .93rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #cfdcdb;
+            padding: .55rem .7rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #e8f4f2;
+        }
+
+        figure {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #cfdcdb;
+        }
+
+        figcaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .88rem;
+            color: #5b6f75;
+            margin-top: .5rem;
+        }
+
+        li {
+            margin-bottom: .4rem;
+        }
+
+        .note {
+            background: #fdf4e6;
+            border-left: 5px solid #d98f28;
+            padding: .8rem 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .92rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Project Plan — Vcare Opticals Website</h1>
+    <p><strong>Student:</strong> ZiyuCao &nbsp;·&nbsp; <strong>Unit:</strong> CP5638 ICT &nbsp;·&nbsp;
+        <strong>Assessment:</strong> A2 Project Plan &amp; Small Website (Individual)
+
+    <h2>Goal</h2>
+
+    <p>Provide clear Vcare Opticals information and a convenient online appointment-request path for new and
+        existing patients.</p>
+
+    <p>Vcare Opticals has served the community for over 25 years and has expanded its services with advanced
+        eye-care technology, online appointment booking and an additional paediatric optometrist. The website
+        will help patients understand these services, meet the team, read eye-health guidance, check clinic
+        details and request an appointment.</p>
+
+    <p>Numeric targets are defined in the Success Evaluation so the goal remains focused on the outcome.</p>
+
+    <h2>Success Evaluation</h2>
+
+    <p>Success is measured after launch with booking, conversion and engagement data. Technical and usability
+        checks support these business measures but do not replace them.</p>
+
+    <table>
+        <caption>Evaluation plan</caption>
+        <thead>
+            <tr>
+                <th scope="col">Metric</th>
+                <th scope="col">Data source</th>
+                <th scope="col">Target</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Online booking requests</td>
+                <td>Monthly count of submitted booking-request emails or connected booking-system records.</td>
+                <td>At least 20 valid booking requests per month by month six</td>
+            </tr>
+            <tr>
+                <td>Booking conversion</td>
+                <td>Compare confirmed appointments with online booking requests in the reception booking record.</td>
+                <td>At least 50% of valid online requests become confirmed appointments</td>
+            </tr>
+            <tr>
+                <td>Booking-form completion</td>
+                <td>Analytics event tracking for booking-form view, start and submit events.</td>
+                <td>At least 40% of visitors who start the form submit a request</td>
+            </tr>
+            <tr>
+                <td>Service-information engagement</td>
+                <td>Analytics measures for visits to Services and Eye Health, plus average engaged time.</td>
+                <td>At least 60% of site sessions view Services or Eye Health; establish an engagement-time baseline in month one and improve it by month six</td>
+            </tr>
+            <tr>
+                <td>Task success</td>
+                <td>Usability testing with representative users completing a booking, service-information and
+                    contact-details task.</td>
+                <td>At least 80% task completion without assistance</td>
+            </tr>
+            <tr>
+                <td>Technical quality</td>
+                <td>Automated internal-link check, HTML validation and review at desktop and narrow-screen widths.</td>
+                <td>No broken internal links or form labels; no layout faults at 1280px or 375px</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>If booking requests or conversion are below target after three months, review the online booking path,
+        appointment options and form fields with reception before adding more content.</p>
+
+    <h2>Target Audience</h2>
+
+    <p>Local adults and families seeking routine eye examinations, prescription updates, optical products, or
+        reliable eye-health information.</p>
+
+    <p>Within that group, two segments matter most: <strong>parents of children who need vision care</strong>,
+        given the practice&rsquo;s paediatric and family optometry offering and professional development in
+        myopia control and vision therapy; and <strong>adults over 40 with a chronic health condition</strong>
+        such as diabetes or hypertension, who need diagnostic screening and coordinated care alongside their
+        general practitioner. A secondary audience is people who already wear glasses or contact lenses and
+        need a prescription update or a new set of frames. The site is deliberately not aimed at people
+        seeking cosmetic procedures or a retail-only frame shop. LASIK information is limited to the
+        consultation, assessment and care support described by the client; the site does not claim to perform
+        laser surgery.</p>
+
+    <p>The design serves this audience in the following ways:</p>
+
+    <ul>
+        <li><strong>Online booking is the primary action.</strong> Calls-to-action take visitors to an
+            accessible appointment-request form, while the phone number and address remain easy to find for
+            patients who prefer personal assistance.</li>
+        <li><strong>Legible, generous typography.</strong> Body text is a minimum of 17px with generous line
+            height and strong colour contrast, and the layout collapses to a single column on a phone. This
+            is deliberate: the audience includes older adults and people whose vision is the reason for their
+            visit, so readability is part of the clinical message rather than a decorative choice.</li>
+        <li><strong>Scannable content.</strong> The client&rsquo;s long email content is rewritten into short
+            sections, checklists, a trading-hours table and clearly labelled headings, so a patient can find
+            the one fact they need in seconds instead of reading a paragraph.</li>
+        <li><strong>Reassurance through the team section.</strong> Qualifications, years of experience and
+            professional focus are shown for each staff member, because parents choosing a paediatric
+            optometrist and adults with chronic conditions both need to know who will be looking after them.</li>
+        <li><strong>Education as a trust builder.</strong> The Eye Health page explains why annual eye
+            examinations matter in plain language, answering the questions patients are often reluctant to ask
+            in the chair.</li>
+        <li><strong>Mobile-first and light to load.</strong> Most enquiries arrive on a phone, so every call
+            to action, phone number and address is reachable with one thumb on a small screen, and each
+            photograph is resized and compressed to the size it is displayed at.</li>
+        <li><strong>No dead ends.</strong> The footer repeats the address, phone number, fax, email address
+            and trading hours on every page, and every page links to every other page.</li>
+    </ul>
+
+    <h2>Site Flowchart</h2>
+
+    <figure>
+        <img src="images/site-flowchart.png"
+            alt="Site flowchart for the Vcare Opticals website. Home is the entry page and links to Services, Our Team, Eye Health and Contact. A shared-navigation note states that every page links to all five pages. Orange dashed arrows show booking or call calls to action from Services, Our Team and Eye Health to Contact."
+            width="1700" height="1120">
+        <figcaption>Figure 1 — Site flowchart for the Vcare Opticals website. One box represents each web
+            page; solid arrows show the entry-page hierarchy, the lower note records the shared navigation,
+            and dashed arrows identify contextual booking or call actions.</figcaption>
+    </figure>
+
+    <p>The diagram shows the hierarchy of the five pages and their relationships. <em>Home</em> is the entry
+        point and links to all four remaining pages in the same order as the navigation bar:
+        <em>Services</em>, <em>Our Team</em>, <em>Eye Health</em> and <em>Contact</em>. The shared-navigation
+        note records that the same five-page navigation appears on every page, so no page is a dead end.
+        The orange dashed arrows identify contextual booking and call actions on Services, Our Team and Eye
+        Health that direct visitors to the contact route. Home also provides the online booking path.
+        <em>Contact</em> holds the practical information, online appointment request form, address, phone,
+        fax, email and trading hours.
+    </p>
+
+    <h2>Pages and content sources</h2>
+
+    <table>
+        <caption>Pages to be built</caption>
+        <thead>
+            <tr>
+                <th scope="col">Page</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Content source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>index.html</td>
+                <td>Explain what the clinic does, list the announcements, and make contacting the clinic
+                    easy.</td>
+                <td>Client email — mission, services, announcements, trading hours</td>
+            </tr>
+            <tr>
+                <td>services.html</td>
+                <td>Describe each service and the Annual Eye Checkup package in full, so a patient knows what
+                    they are asking for.</td>
+                <td>Client email — service list and package inclusions</td>
+            </tr>
+            <tr>
+                <td>team.html</td>
+                <td>Build trust: the five staff members, their roles and their experience.</td>
+                <td>Client email — staff biographies</td>
+            </tr>
+            <tr>
+                <td>eye-health.html</td>
+                <td>Answer pre-visit questions, and support the Annual Eye Checkup package.</td>
+                <td>Client email — the &ldquo;Importance of Annual Eye Exams&rdquo; article and the list of
+                    articles that may interest users</td>
+            </tr>
+            <tr>
+                <td>contact.html</td>
+                <td>Everything needed to reach the clinic: online appointment request, address, phone, fax,
+                    email and trading hours.</td>
+                <td>Client email — contact details and trading hours</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>All copy is rewritten from the client&rsquo;s supplied content for scanning and web tone. The updated site
+        includes the client-provided online appointment-request service, advanced technology, virtual
+        consultation option, new optometrist and service announcements. No unprovided staff photograph,
+        patient testimonial, insurance partnership or additional clinical service is claimed. Where practical
+        guidance is needed for article summaries, it is presented as general information rather than as a
+        clinical claim.</p>
+
+    <p><strong>Announcements.</strong> The updated client content authorises the displayed 25% online-booking
+        discount, free eye checkup on Saturday 4 July from 9:00am, and 10% Annual Eye Checkup offer until
+        31 May. The site asks visitors to confirm availability when requesting an appointment.</p>
+
+    <h2>Images</h2>
+
+    <p>Only supplied assignment images are used, including the general optometry photographs and the four
+        supplied staff photographs. No image has been generated, downloaded from the internet or linked from
+        an external address. Each original is between 2&nbsp;MB and 6&nbsp;MB
+        and up to 10,752&nbsp;px wide, so every image is cropped to the aspect ratio it is displayed at,
+        resized to that display size and saved as a progressive JPEG (the logo is kept as PNG). This reduces the
+        image weight of the site from roughly 30&nbsp;MB to about 1&nbsp;MB, which matters for patients on a
+        mobile connection. Every image carries descriptive alternative text, and photographs of equipment are
+        captioned or noted as illustrative so they are never presented as this clinic&rsquo;s own devices.</p>
+
+    <table>
+        <caption>Image usage — the nine supplied photographs only</caption>
+        <thead>
+            <tr>
+                <th scope="col">Site file</th>
+                <th scope="col">Original supplied file</th>
+                <th scope="col">Used on</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>vcare-logo.png</td>
+                <td>AdobeStock_1722780654.jpeg</td>
+                <td>Brand/logo area — header and
+                    footer of all five pages</td>
+            </tr>
+            <tr>
+                <td>clinic-eye-exam.jpg</td>
+                <td>AdobeStock_489672828.jpeg</td>
+                <td>index.html (hero
+                    image)</td>
+            </tr>
+            <tr>
+                <td>clinic-consult.jpg</td>
+                <td>AdobeStock_489672828.jpeg</td>
+                <td>services.html (consultation
+                    image); contact.html (clinic photograph)</td>
+            </tr>
+            <tr>
+                <td>phoropter.jpg</td>
+                <td>AdobeStock_1867664290.jpeg</td>
+                <td>services.html (vision testing);
+                    index.html (service summary card); team.html (banner, captioned as illustrative)</td>
+            </tr>
+            <tr>
+                <td>glasses-eye-chart.jpg</td>
+                <td>AdobeStock_179163120.jpeg</td>
+                <td>services.html (lenses and
+                    frames); index.html (service summary card)</td>
+            </tr>
+            <tr>
+                <td>contact-lens.jpg</td>
+                <td>AdobeStock_1571768454.jpeg</td>
+                <td>services.html (contact lens
+                    fitting); index.html (service summary card)</td>
+            </tr>
+            <tr>
+                <td>annual-checkup.jpg</td>
+                <td>AdobeStock_404824553.jpeg</td>
+                <td>services.html (Annual Eye
+                    Checkup package)</td>
+            </tr>
+            <tr>
+                <td>eye-health.jpg</td>
+                <td>AdobeStock_404824553.jpeg</td>
+                <td>eye-health.html (banner, annual
+                    eye exam)</td>
+            </tr>
+            <tr>
+                <td>eye-anatomy.jpg</td>
+                <td>AdobeStock_1834474473 (1).jpeg</td>
+                <td>services.html (diagnostic
+                    screening); eye-health.html (eye structure)</td>
+            </tr>
+            <tr>
+                <td>eye-diagnostics.jpg</td>
+                <td>AdobeStock_283739999.jpeg</td>
+                <td>eye-health.html (screening
+                    concept image)</td>
+            </tr>
+            <tr>
+                <td>diverse-eyes.jpg</td>
+                <td>AdobeStock_1198796885.jpeg</td>
+                <td>eye-health.html (eyes
+                    differ) — used cautiously as general imagery only</td>
+            </tr>
+            <tr>
+                <td>site-flowchart.png</td>
+                <td>Generated site map</td>
+                <td>Project plan only; never part of the
+                    website</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Where the same photograph is used on two pages it is cropped differently so the two uses do not look
+        identical, and the original file name is listed above for each crop. One further crop of
+        AdobeStock_404824553.jpeg was produced for the home page during layout and then removed as
+        duplicative; only the crops listed above are kept.</p>
+
+    <h2>Design and technical approach</h2>
+
+    <ul>
+        <li><strong>Hand-built HTML5 and CSS.</strong> No templates, frameworks or CSS libraries such as
+            Bootstrap are used, in line with the assignment requirements. One external stylesheet
+            (<code>css/styles.css</code>) is linked from every page.</li>
+        <li><strong>No external resources of any kind.</strong> The site loads no web fonts, no external
+            images, no embedded maps and no third-party scripts, and it contains no links to external
+            websites, because the client supplied none. Every page therefore remains complete and readable
+            when the project is unpacked from the ZIP with no network connection. Typography uses system
+            fonts only.</li>
+        <li><strong>Consistent visual system.</strong> A teal, mint and amber palette with a serif display
+            face and a sans-serif body face, repeated identically across all five pages: the same header,
+            navigation, footer, button styles and spacing rhythm.</li>
+        <li><strong>Accessibility.</strong> Semantic landmarks (header, nav, main, section, footer), a skip
+            link, one <code>h1</code> per page with a correct heading order, descriptive alternative text,
+            visible keyboard focus styling, colour contrast of at least WCAG AA, and
+            <code>aria-current="page"</code> on the active navigation item.
+        </li>
+        <li><strong>Images are never presented as portraits.</strong> The supplied set contains no photographs
+            of the practice&rsquo;s staff, so the team page uses text profiles and a captioned equipment
+            image; presenting a stock photograph as a real practitioner would be misleading.</li>
+        <li><strong>Separation from the plan.</strong> The project plan is a separate document and is
+            deliberately not linked from any page of the website.</li>
+    </ul>
+
+    <h2>Build sequence, validation and risks</h2>
+
+    <ol>
+        <li>Confirm the goal, success measures and target audience with the client (this document).</li>
+        <li>Agree the information architecture and draw the site flowchart (Figure 1).</li>
+        <li>Prepare the supplied images: crop, resize and compress to the sizes actually displayed.</li>
+        <li>Build the shared structure — stylesheet, header, navigation, footer, buttons.</li>
+        <li>Build the five pages in navigation order, moving the client content into each page.</li>
+        <li>Run the evaluation plan above: link check, validation, and desktop and narrow-screen review.</li>
+        <li>Release, then record monthly enquiry counts and review at one, three and six months.</li>
+    </ol>
+
+    <p><strong>Main risks and mitigations:</strong> no photograph was supplied for Dr. Daniel Wilson, so the
+        team page uses an explicitly labelled initials placeholder rather than a misleading portrait. The
+        online form is an appointment request until it is connected to a secure production booking service.
+        If the site generates requests but few confirmed appointments, the booking path and available
+        appointment options should be reviewed with reception.</p>
+
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c07f0629604a4b109db2ec781afaee43"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
